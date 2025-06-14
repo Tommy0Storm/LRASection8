@@ -65,3 +65,9 @@ This project offers a unique digital experience for employers and chairpersons t
 
 Open `schedule8-masterpiece.html` in a modern web browser to begin. For an all-in-one page with no external dependencies, open `schedule8-offline.html`.
 And for quick reference to the complete Labour Relations Act, open `lra-full.html`.
+
+## Packaging the Gift
+
+Run `./package_gift.sh` to produce `gift-package.zip` containing the offline
+HTML pages and supporting assets. Share this archive to provide a
+self-contained reference that works without an internet connection.
