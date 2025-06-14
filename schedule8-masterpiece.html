@@ -26,6 +26,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pagedjs/0.3.0/paged.polyfill.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/lib/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/5.0.1/openseadragon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.93/epub.min.js"></script>
     
     <style>
         :root {
@@ -673,7 +677,7 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Schedule 8<br>Labour Relations Act</h1>
-                    <div class="hero-subtitle">Your Essential Guide to Employment Discipline</div>
+                    <div class="hero-subtitle"><span id="typed-subtitle"></span></div>
                     <p class="hero-description">
                         A comprehensive, interactive reference for HR professionals, managers, and legal practitioners. 
                         Navigate South Africa's employment discipline framework with confidence and precision.
@@ -1188,11 +1192,11 @@
                     mobileScrollSupport: false
                 });
                 pageFlip.loadFromHTML(document.querySelectorAll('#flipbook .page'));
-            };
-            document.body.appendChild(script);
+            }            document.body.appendChild(script);
         };
         document.addEventListener('DOMContentLoaded', loadFlip);
     const idx=lunr(function(){this.field("title");this.field("body");document.querySelectorAll("[data-section]").forEach(s=>{this.add({id:s.id,title:s.querySelector(".card-title")?s.querySelector(".card-title").textContent:"",body:s.textContent});});});document.getElementById("searchBox").addEventListener("input",e=>{console.log(idx.search(e.target.value));});
+        if (window.Typed) { new Typed('#typed-subtitle', { strings: ['Your Essential Guide to Employment Discipline', 'Explore Schedule 8 with confidence'], typeSpeed: 40, backSpeed: 20, loop: true }); }
     $("#flipbook").turn({width:400,height:500,autoCenter:true});
     anime({
         targets: ".hero-text h1",

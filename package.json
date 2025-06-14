@@ -14,11 +14,15 @@
     "animejs": "^4.0.2",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.6",
+    "epubjs": "^0.3.93",
+    "fullpage.js": "^4.0.36",
     "lottie-web": "^5.13.0",
     "lunr": "^2.3.9",
+    "openseadragon": "^5.0.1",
     "page-flip": "^2.0.7",
     "scrollmagic": "^2.0.8",
     "turn.js": "^1.0.5",
+    "typed.js": "^2.1.0",
     "wowjs": "^1.1.3"
   },
   "devDependencies": {
