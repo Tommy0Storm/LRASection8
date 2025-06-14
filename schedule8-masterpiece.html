@@ -15,6 +15,7 @@
     
     <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='aos.css'>
     <!-- Animation & Book Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/css/page-flip.min.css">
@@ -545,6 +546,38 @@
         ::-webkit-scrollbar-thumb:hover {
             background: var(--primary-navy);
         }
+        .search-bar {
+            margin-top: var(--space-sm);
+            text-align: center;
+        }
+        #searchInput {
+            padding: 0.5rem 1rem;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid var(--border-subtle);
+            border-radius: 30px;
+        }
+        #searchResults {
+            margin-top: var(--space-sm);
+        }
+        .search-result {
+            background: var(--background-section);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+        .flipbook {
+            width: 100%;
+            height: 400px;
+            margin: 2rem auto;
+        }
+        .flipbook .page {
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
         /* Flipbook Styles */
         .my-flipbook {
             width: 100%;
@@ -607,6 +640,10 @@
                     <div class="advocate-signature">
                         — A gift from Advocate Nandi Basson
                     </div>
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search Schedule 8..." />
+                        <div id="searchResults"></div>
+                    </div>
                 </div>
                 <div class="hero-visual">
                     <div class="document-preview">
@@ -635,7 +672,7 @@
         </p>
         
         <div class="schedule-grid">
-            <div class="schedule-card" onclick="openSection(1)">
+            <div class="schedule-card" data-aos="fade-up" onclick="openSection(1)">
                 <div class="card-number">8.1</div>
                 <h3 class="card-title">General Guidelines</h3>
                 <p class="card-description">
@@ -651,7 +688,7 @@
                 </div>
             </div>
 
-            <div class="schedule-card" onclick="openSection(2)">
+            <div class="schedule-card" data-aos="fade-up" onclick="openSection(2)">
                 <div class="card-number">8.2</div>
                 <h3 class="card-title">Disciplinary Action</h3>
                 <p class="card-description">
@@ -667,7 +704,7 @@
                 </div>
             </div>
 
-            <div class="schedule-card" onclick="openSection(3)">
+            <div class="schedule-card" data-aos="fade-up" onclick="openSection(3)">
                 <div class="card-number">8.3</div>
                 <h3 class="card-title">Misconduct Examples</h3>
                 <p class="card-description">
@@ -683,7 +720,7 @@
                 </div>
             </div>
 
-            <div class="schedule-card" onclick="openSection(4)">
+            <div class="schedule-card" data-aos="fade-up" onclick="openSection(4)">
                 <div class="card-number">8.4</div>
                 <h3 class="card-title">Incapacity Dismissals</h3>
                 <p class="card-description">
@@ -699,7 +736,7 @@
                 </div>
             </div>
 
-            <div class="schedule-card" onclick="openSection(5)">
+            <div class="schedule-card" data-aos="fade-up" onclick="openSection(5)">
                 <div class="card-number">8.5</div>
                 <h3 class="card-title">Operational Requirements</h3>
                 <p class="card-description">
@@ -715,7 +752,7 @@
                 </div>
             </div>
 
-            <div class="schedule-card" onclick="openSection(6)">
+            <div class="schedule-card" data-aos="fade-up" onclick="openSection(6)">
                 <div class="card-number">8.6</div>
                 <h3 class="card-title">Automatically Unfair Dismissals</h3>
                 <p class="card-description">
@@ -732,6 +769,12 @@
             </div>
         </div>
     </section>
+    <section class="section" id="flipbook-section">
+        <h2 class="section-title">Interactive Flipbook</h2>
+        <div id="flipbook" class="flipbook">
+            <div class="page"><h3>Section 8.1</h3><p>General Guidelines for Fair Dismissal...</p></div>
+            <div class="page"><h3>Section 8.2</h3><p>Progressive Disciplinary Action...</p></div>
+            <div class="page"><h3>Section 8.3</h3><p>Examples of Misconduct...</p></div>
     <!-- Flipbook Section -->
     <section class="section wow fadeInUp" id="book">
         <h2 class="section-title">Schedule 8 Flipbook</h2>
@@ -1064,6 +1107,41 @@
                 }, 0);
             });
         }
+// Initialize AOS animations
+AOS.init({ once: true });
+
+$(document).ready(function() {
+    if (window['$'] && document.getElementById('flipbook')) {
+        $('#flipbook').turn({
+            width: 600,
+            height: 400,
+            autoCenter: true
+        });
+    }
+});
+
+const documents = [
+    { id: 1, title: 'General Guidelines', body: 'A dismissal must be both substantively and procedurally fair to be valid.' },
+    { id: 2, title: 'Progressive Disciplinary Action', body: 'Disciplinary action should generally be progressive.' },
+    { id: 3, title: 'Examples of Misconduct', body: 'Understanding different categories of misconduct helps determine action.' }
+];
+const idx = lunr(function() {
+    this.ref('id');
+    this.field('title');
+    this.field('body');
+    documents.forEach(d => this.add(d));
+});
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+if (searchInput) {
+    searchInput.addEventListener('input', () => {
+        const results = idx.search(searchInput.value);
+        searchResults.innerHTML = results.map(r => {
+            const doc = documents.find(d => d.id == r.ref);
+            return `<div class="search-result"><strong>${doc.title}</strong><p>${doc.body}</p></div>`;
+        }).join('') || '<p style="color:#5D6D7E;">No results found</p>';
+    });
+}
         // Initialize WOW animations and Flipbook
         if (typeof WOW === "function") {
             new WOW().init();
@@ -1080,5 +1158,9 @@
             pageFlip.loadFromHTML(document.querySelectorAll("#bookPages .page"));
         }
     </script>
+    <script src="jquery.min.js"></script>
+    <script src="turn.min.js"></script>
+    <script src="lunr.min.js"></script>
+    <script src="aos.js"></script>
 </body>
 </html>
