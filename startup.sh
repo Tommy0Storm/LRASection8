@@ -145,6 +145,13 @@ install_global_packages(){
     parcel-bundler
     serve
     eslint_d
+    prettier-plugin-tailwindcss
+    eslint-plugin-tailwindcss
+    eslint-plugin-unicorn
+    eslint-plugin-perfectionist
+    eslint-plugin-functional
+    zx
+    yalc
     commitizen
     cz-conventional-changelog
     typedoc
@@ -229,6 +236,9 @@ install_local_packages(){
     express
     cors
     helmet
+    axios
+    bcrypt
+    jsonwebtoken
     body-parser
     morgan
   )
@@ -298,6 +308,12 @@ install_local_packages(){
     babel-jest
     stylelint-config-standard
     eslint-plugin-jsdoc
+    eslint-plugin-unicorn
+    eslint-plugin-perfectionist
+    eslint-plugin-functional
+    eslint-plugin-tailwindcss
+    prettier-plugin-tailwindcss
+    owasp-dependency-check
     puppeteer
     pwmetrics
     k6
