@@ -12,7 +12,6 @@ node_modules/
 *.sh~
 
 # Editor and IDE files
-.vscode/
 .idea/
 *.sublime-workspace
 *.sublime-project

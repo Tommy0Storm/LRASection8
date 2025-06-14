@@ -26,6 +26,21 @@ install_node(){
   fi
 }
 
+install_docker(){
+  if command -v docker >/dev/null 2>&1; then
+    log "Docker $(docker --version) already installed"
+    return
+  fi
+  log "Installing Docker"
+  if [ "$PM" = "apt" ]; then
+    $SUDO apt-get update -y
+    $SUDO apt-get install -y docker.io
+    $SUDO systemctl enable --now docker
+  else
+    $SUDO brew install --cask docker
+  fi
+}
+
 install_global_packages(){
   local packages=(
     gitbook-cli
@@ -55,6 +70,25 @@ install_global_packages(){
       npm install -g "$pkg"
     fi
   done
+}
+
+run_npm_install(){
+  if [ -f package-lock.json ]; then
+    log "Installing dependencies with npm ci"
+    npm ci
+  else
+    log "Installing dependencies with npm install"
+    npm install
+  fi
+}
+
+perform_security_scans(){
+  log "Running npm audit"
+  npm audit --audit-level=high || true
+  if command -v snyk >/dev/null 2>&1; then
+    log "Running Snyk security scan"
+    snyk test || true
+  fi
 }
 
 install_local_packages(){
@@ -108,6 +142,9 @@ main(){
   fi
   install_global_packages
   install_local_packages
+  install_docker
+  run_npm_install
+  perform_security_scans
   log "Setup complete"
 }
 

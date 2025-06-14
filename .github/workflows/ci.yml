@@ -15,5 +15,8 @@ jobs:
         with:
           node-version: '18'
       - run: npm ci
+      - run: npm run lint --if-present
+      - run: npm run format --if-present
       - run: npm test --if-present
+      - run: npm audit --audit-level=high
 

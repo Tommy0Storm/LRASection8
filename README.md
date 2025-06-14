@@ -10,6 +10,18 @@ Run the `startup.sh` script to install recommended tooling and libraries. The sc
 ./startup.sh
 ```
 
+After setup you can validate the environment with:
+
+```bash
+./verify.sh
+```
+
+To develop in a container run:
+
+```bash
+docker build -t lrasection8 .
+```
+
 After running the script you can open `schedule8-masterpiece.html` in your browser.
 
 Interactive reference for Section 8 of the South African Labour Relations Act.

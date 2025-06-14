@@ -4,7 +4,10 @@
   "description": "This project provides an interactive reference for Schedule 8 of the Labour Relations Act. The included `schedule8-masterpiece.html` page features a rich flipbook section for a book-like reading experience and search capabilities.",
   "main": "aos.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "test": "vitest run",
+    "security": "npm audit --audit-level=high"
   },
   "keywords": [],
   "author": "",
@@ -28,7 +31,9 @@
   "devDependencies": {
     "@playwright/test": "^1.53.0",
     "cypress": "^14.4.1",
-    "eslint": "^9.29.0",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
     "husky": "^9.1.7",
     "jest": "^30.0.0",
     "lighthouse": "^12.6.1",
