@@ -40,6 +40,8 @@ Interactive reference for Section 8 of the South African Labour Relations Act.
 - Quick text search across sections using [lunr.js](https://lunrjs.com/)
 - Responsive design with professional typography
 - Setup script `startup.sh` installs required libraries and developer tooling
+- Startup script also installs tools like **pnpm**, **gulp-cli**, **commitizen**,
+  **typedoc**, **esbuild**, **turbo**, **lerna**, **vercel**, and **netlify-cli** for a streamlined modern workflow
 - Additional book libraries (PageFlip, ScrollMagic, Paged.js), epub.js for eBook rendering, OpenSeadragon for high-resolution images, FullPage.js for smooth transitions, and Typed.js for animated text
 
 ## Setup
