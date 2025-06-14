@@ -5,3 +5,4 @@
 - **ESLint issues**: Run `npx eslint --fix .` to automatically fix problems.
 - **Prettier format warnings**: Execute `npx prettier --write .`.
 - **Verification script fails**: Ensure all dependencies are installed by running `./startup.sh` again.
+- **VS Code extensions missing**: Install [Visual Studio Code](https://code.visualstudio.com/) and re-run `./startup.sh` to automatically install the recommended extensions.
