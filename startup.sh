@@ -150,6 +150,10 @@ install_global_packages(){
     eslint-plugin-unicorn
     eslint-plugin-perfectionist
     eslint-plugin-functional
+    bash-language-server
+    dockerfile-language-server-nodejs
+    vscode-langservers-extracted
+    prettier-plugin-organize-imports
     zx
     yalc
     commitizen
@@ -198,10 +202,12 @@ install_global_packages(){
 run_npm_install(){
   if [ -f package-lock.json ]; then
     log "Installing dependencies with npm ci"
-    npm ci
+    npm ci --omit=optional
   else
-    log "Installing dependencies with npm install"
-    npm install
+    log "Generating package-lock.json"
+    npm install --package-lock-only
+    log "Installing dependencies with npm ci"
+    npm ci --omit=optional
   fi
 }
 
@@ -256,6 +262,10 @@ install_local_packages(){
     svelte
     vue
     chart.js
+    redux
+    dayjs
+    ramda
+    rxjs
   )
   local dev_deps=(
     eslint
@@ -344,6 +354,11 @@ install_local_packages(){
     eslint-plugin-regexp
     eslint-plugin-svelte3
     svelte-check
+    @types/node
+    eslint-plugin-jsonc
+    eslint-plugin-n
+    prettier-plugin-organize-imports
+    stylelint-scss
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
