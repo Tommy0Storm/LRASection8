@@ -179,6 +179,11 @@ install_global_packages(){
     pwmetrics
     k6
     dependency-cruiser
+    semantic-release
+    eslint-formatter-pretty
+    grunt-cli
+    typescript-language-server
+    eslint-language-server
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
@@ -318,6 +323,12 @@ install_local_packages(){
     pwmetrics
     k6
     dependency-cruiser
+    tailwindcss
+    postcss
+    autoprefixer
+    sass
+    semantic-release
+    eslint-plugin-vue
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
