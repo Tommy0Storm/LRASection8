@@ -76,6 +76,14 @@ install_global_packages(){
     parcel-bundler
     serve
     eslint_d
+    commitizen
+    cz-conventional-changelog
+    typedoc
+    esbuild
+    turbo
+    lerna
+    vercel
+    netlify-cli
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
@@ -122,6 +130,11 @@ install_local_packages(){
     typed.js
     lottie-web
     dotenv
+    express
+    cors
+    helmet
+    body-parser
+    morgan
   )
   local dev_deps=(
     eslint
@@ -169,6 +182,16 @@ install_local_packages(){
     parcel-bundler
     serve
     eslint_d
+    ts-jest
+    @types/jest
+    jest-environment-jsdom
+    @testing-library/jest-dom
+    @testing-library/react
+    @testing-library/user-event
+    supertest
+    eslint-plugin-compat
+    stylelint-config-standard
+    eslint-plugin-jsdoc
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
