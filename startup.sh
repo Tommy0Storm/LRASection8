@@ -247,6 +247,16 @@ install_local_packages(){
     body-parser
     morgan
   )
+  # Additional common libraries for new projects
+  deps+=(
+    react
+    react-dom
+    lodash
+    date-fns
+    svelte
+    vue
+    chart.js
+  )
   local dev_deps=(
     eslint
     prettier
@@ -329,6 +339,11 @@ install_local_packages(){
     sass
     semantic-release
     eslint-plugin-vue
+    eslint-plugin-sonarjs
+    eslint-plugin-no-secrets
+    eslint-plugin-regexp
+    eslint-plugin-svelte3
+    svelte-check
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
