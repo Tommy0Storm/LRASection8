@@ -2,7 +2,8 @@
 
 This project includes a comprehensive environment bootstrap script called `startup.sh`.
 The script installs Node.js, Docker, and an extensive suite of developer tools.
-It can be executed multiple times safely.
+It will also install recommended VS Code extensions and open the React DevTools page in your default browser.
+The script is idempotent and can be executed multiple times safely.
 
 ```bash
 ./startup.sh

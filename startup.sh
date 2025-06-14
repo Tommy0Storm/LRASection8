@@ -57,6 +57,59 @@ install_docker(){
   fi
 }
 
+ensure_jq(){
+  if command -v jq >/dev/null 2>&1; then
+    log "jq $(jq --version) already installed"
+    return
+  fi
+  log "Installing jq"
+  if [ "$PM" = "apt" ]; then
+    $SUDO apt-get update -y
+    $SUDO apt-get install -y jq
+  elif [ "$PM" = "brew" ]; then
+    $SUDO brew install jq
+  else
+    choco install -y jq
+  fi
+}
+
+install_vscode_extensions(){
+  if ! command -v code >/dev/null 2>&1; then
+    log "VS Code not detected; skipping extension installation"
+    return
+  fi
+  local ext_file=".vscode/extensions.json"
+  if [ ! -f "$ext_file" ]; then
+    log "No VS Code extension recommendations found"
+    return
+  fi
+  log "Installing VS Code extensions"
+  node - <<'EOF' | while read -r ext; do
+const fs = require('fs');
+const path = '.vscode/extensions.json';
+const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+for (const e of data.recommendations) console.log(e);
+EOF
+  do
+    if code --list-extensions | grep -q "$ext"; then
+      log "$ext already installed"
+    else
+      code --install-extension "$ext" >/dev/null || true
+      log "Installed VS Code extension $ext"
+    fi
+  done
+}
+
+install_chrome_devtools(){
+  local url="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi"
+  case "$OS" in
+    Linux*) command -v xdg-open >/dev/null 2>&1 && xdg-open "$url" >/dev/null 2>&1 & ;;
+    Darwin*) command -v open >/dev/null 2>&1 && open "$url" ;;
+    CYGWIN*|MINGW*|MSYS*) start "$url" >/dev/null 2>&1 ;;
+  esac
+  log "Opened React DevTools page in browser"
+}
+
 install_global_packages(){
   local packages=(
     gitbook-cli
@@ -116,6 +169,9 @@ install_global_packages(){
     degit
     bunyan
     open-cli
+    pwmetrics
+    k6
+    dependency-cruiser
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
@@ -242,6 +298,10 @@ install_local_packages(){
     babel-jest
     stylelint-config-standard
     eslint-plugin-jsdoc
+    puppeteer
+    pwmetrics
+    k6
+    dependency-cruiser
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
@@ -254,6 +314,7 @@ main(){
   local start=$(date +%s)
   log "Starting setup"
   backup_configs
+  ensure_jq
   install_node
   if [ ! -f package.json ]; then
     log "Initializing npm project"
@@ -262,6 +323,8 @@ main(){
   install_global_packages
   install_local_packages
   install_docker
+  install_vscode_extensions
+  install_chrome_devtools
   run_npm_install
   perform_security_scans
   local end=$(date +%s)

@@ -4,7 +4,7 @@ This project provides an interactive reference for Schedule 8 of the Labour Rela
 
 ## Setup
 
-Run the `startup.sh` script to install recommended tooling and libraries. The script now supports Linux, macOS and Windows (via Chocolatey) and installs Node.js, Docker and a host of developer utilities including GitBook and Docusaurus.
+Run the `startup.sh` script to install recommended tooling and libraries. The script now supports Linux, macOS and Windows (via Chocolatey) and installs Node.js, Docker and a host of developer utilities including GitBook and Docusaurus. It also installs recommended VS Code extensions and opens the React DevTools extension page for Chrome.
 
 ```bash
 ./startup.sh
