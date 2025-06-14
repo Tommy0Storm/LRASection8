@@ -20,7 +20,7 @@ Interactive reference for Section 8 of the South African Labour Relations Act.
 - Quick text search across sections using [lunr.js](https://lunrjs.com/)
 - Responsive design with professional typography
 - Setup script `startup.sh` installs required libraries and developer tooling
-- Additional book libraries (PageFlip, ScrollMagic, Paged.js)
+- Additional book libraries (PageFlip, ScrollMagic, Paged.js), epub.js for eBook rendering, OpenSeadragon for high-resolution images, FullPage.js for smooth transitions, and Typed.js for animated text
 
 ## Setup
 Run `./startup.sh` to install dependencies. The script detects your OS and installs Node.js and all project packages. It is safe to run multiple times.
@@ -35,6 +35,7 @@ This project offers a unique digital experience for employers and chairpersons t
 
 - Responsive interface with animated sections
 - Flipbook view powered by PageFlip for book-like navigation
+- Animated subtitle using Typed.js to draw attention
 - Scroll animations via WOW.js and Animate.css
 - Enhanced reading experience using ScrollMagic and Lottie animations
 - Print friendly pages generated with Paged.js

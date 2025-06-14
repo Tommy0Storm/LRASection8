@@ -63,6 +63,10 @@ install_local_packages(){
     wowjs
     aos
     scrollmagic
+    openseadragon
+    epubjs
+    fullpage.js
+    typed.js
     lottie-web
   )
   local dev_deps=(
