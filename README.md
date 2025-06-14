@@ -24,6 +24,14 @@ docker build -t lrasection8 .
 
 After running the script you can open `schedule8-masterpiece.html` in your browser.
 
+Alternatively start a local server:
+
+```bash
+npm start
+```
+
+Then open `http://localhost:8080/schedule8-masterpiece.html` in your browser.
+
 Interactive reference for Section 8 of the South African Labour Relations Act.
 
 ## Features

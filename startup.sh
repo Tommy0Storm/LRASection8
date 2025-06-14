@@ -65,6 +65,8 @@ install_global_packages(){
     concurrently
     cross-env
     pm2
+    http-server
+    live-server
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
@@ -140,6 +142,10 @@ install_local_packages(){
     htmlhint
     stylelint
     markdownlint-cli
+    eslint-config-airbnb-base
+    eslint-plugin-promise
+    http-server
+    live-server
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
