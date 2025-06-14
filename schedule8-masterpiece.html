@@ -969,6 +969,10 @@
           practitioners who work tirelessly to ensure fair and compliant
           employment practices in South Africa.
         </p>
+        <p class="footer-message">
+          We hope this digital gift serves as a practical companion long after
+          the training.
+        </p>
         <div class="contact-info">
           <div class="contact-item">
             <i class="fas fa-envelope"></i>
@@ -1286,7 +1290,7 @@
               };
               document.addEventListener('DOMContentLoaded', loadFlip);
           const idx=lunr(function(){this.field("title");this.field("body");document.querySelectorAll("[data-section]").forEach(s=>{this.add({id:s.id,title:s.querySelector(".card-title")?s.querySelector(".card-title").textContent:"",body:s.textContent});});});document.getElementById("searchBox").addEventListener("input",e=>{console.log(idx.search(e.target.value));});
-              if (window.Typed) { new Typed('#typed-subtitle', { strings: ['Your Essential Guide to Employment Discipline', 'Explore Schedule 8 with confidence'], typeSpeed: 40, backSpeed: 20, loop: true }); }
+              if (window.Typed) { new Typed('#typed-subtitle', { strings: ['Your Essential Guide to Employment Discipline', 'Explore Schedule 8 with confidence', 'Thank you for joining our training!'], typeSpeed: 40, backSpeed: 20, loop: true }); }
           $("#flipbook").turn({width:400,height:500,autoCenter:true});
           anime({
               targets: ".hero-text h1",
