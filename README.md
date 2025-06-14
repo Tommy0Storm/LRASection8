@@ -4,7 +4,7 @@ This project provides an interactive reference for Schedule 8 of the Labour Rela
 
 ## Setup
 
-Run the `startup.sh` script to install recommended tooling and libraries. The script detects your operating system and installs Node.js along with useful utilities such as GitBook and Docusaurus.
+Run the `startup.sh` script to install recommended tooling and libraries. The script now supports Linux, macOS and Windows (via Chocolatey) and installs Node.js, Docker and a host of developer utilities including GitBook and Docusaurus.
 
 ```bash
 ./startup.sh
@@ -16,10 +16,18 @@ After setup you can validate the environment with:
 ./verify.sh
 ```
 
+See `docs/SETUP_GUIDE.md` for a detailed walkthrough of the environment setup.
+
 To develop in a container run:
 
 ```bash
 docker build -t lrasection8 .
+```
+
+You can also spin up the project using Docker Compose:
+
+```bash
+docker-compose up --build
 ```
 
 After running the script you can open `schedule8-masterpiece.html` in your browser.
@@ -45,7 +53,7 @@ Interactive reference for Section 8 of the South African Labour Relations Act.
 - Additional book libraries (PageFlip, ScrollMagic, Paged.js), epub.js for eBook rendering, OpenSeadragon for high-resolution images, FullPage.js for smooth transitions, and Typed.js for animated text
 
 ## Setup
-Run `./startup.sh` to install dependencies. The script detects your OS and installs Node.js and all project packages. It now includes additional testing frameworks like Mocha and Ava along with advanced linting utilities. The script is safe to run multiple times.
+Run `./startup.sh` to install dependencies. The script detects your OS (Linux, macOS or Windows) and installs Node.js, Docker and all project packages. It now installs the latest testing frameworks, debugging tools and linting utilities. The script is idempotent so it can be executed repeatedly.
 Section 8 of the LRA for Disciplinary hearings
 This project now includes interactive Schedule 8 content with an animated flipbook and search functionality. Run `startup.sh` to install recommended development dependencies and debugging tools.
 

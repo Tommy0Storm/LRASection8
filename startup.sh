@@ -4,10 +4,22 @@ set -euo pipefail
 log(){ echo -e "\033[1;34m[INFO]\033[0m $1"; }
 err(){ echo -e "\033[1;31m[ERROR]\033[0m $1"; }
 
+backup_configs(){
+  local backup_dir=".config_backup"
+  mkdir -p "$backup_dir"
+  for f in .eslintrc.json .prettierrc tsconfig.json eslint.config.js; do
+    if [ -f "$f" ]; then
+      cp "$f" "$backup_dir/" 2>/dev/null || true
+    fi
+  done
+  log "Configuration backed up to $backup_dir"
+}
+
 OS="$(uname -s)"
 case "$OS" in
   Linux*) PM="apt"; SUDO="sudo" ;;
   Darwin*) PM="brew"; SUDO="" ;;
+  CYGWIN*|MINGW*|MSYS*) PM="choco"; SUDO="" ;;
   *) err "Unsupported OS: $OS"; exit 1 ;;
 esac
 log "Detected OS: $OS"
@@ -21,8 +33,10 @@ install_node(){
   if [ "$PM" = "apt" ]; then
     $SUDO apt-get update -y
     $SUDO apt-get install -y nodejs npm
-  else
+  elif [ "$PM" = "brew" ]; then
     $SUDO brew install node
+  else
+    choco install -y nodejs
   fi
 }
 
@@ -36,8 +50,10 @@ install_docker(){
     $SUDO apt-get update -y
     $SUDO apt-get install -y docker.io
     $SUDO systemctl enable --now docker
-  else
+  elif [ "$PM" = "brew" ]; then
     $SUDO brew install --cask docker
+  else
+    choco install -y docker-desktop
   fi
 }
 
@@ -92,6 +108,10 @@ install_global_packages(){
     firebase-tools
     @aws-amplify/cli
     @vercel/ncc
+    lint-staged
+    gitmoji-cli
+    ngrok
+    node-inspector
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
@@ -119,6 +139,14 @@ perform_security_scans(){
   if command -v snyk >/dev/null 2>&1; then
     log "Running Snyk security scan"
     snyk test || true
+  fi
+}
+
+health_check(){
+  log "Node: $(node --version)"
+  log "NPM: $(npm --version)"
+  if command -v docker >/dev/null 2>&1; then
+    log "Docker: $(docker --version)"
   fi
 }
 
@@ -190,6 +218,8 @@ install_local_packages(){
     parcel-bundler
     serve
     eslint_d
+    lint-staged
+    gitmoji-cli
     ts-jest
     @types/jest
     jest-environment-jsdom
@@ -217,7 +247,9 @@ install_local_packages(){
 }
 
 main(){
+  local start=$(date +%s)
   log "Starting setup"
+  backup_configs
   install_node
   if [ ! -f package.json ]; then
     log "Initializing npm project"
@@ -228,7 +260,9 @@ main(){
   install_docker
   run_npm_install
   perform_security_scans
-  log "Setup complete"
+  local end=$(date +%s)
+  log "Setup completed in $((end-start)) seconds"
+  health_check
 }
 
 main "$@"

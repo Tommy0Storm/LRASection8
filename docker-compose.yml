@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  lrasection8:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - '8080:8080'
+    command: npm start
