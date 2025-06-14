@@ -4,6 +4,7 @@ turn.min.js
 aos.js
 aos.css
 .eslintrc.json
+package-lock.json
 .github/workflows/ci.yml
 README.md
 tsconfig.json

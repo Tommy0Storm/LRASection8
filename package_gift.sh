@@ -32,9 +32,9 @@ main(){
   log "Packaging offline gift"
   ensure_zip
   TMP_DIR=$(mktemp -d)
-  cp schedule8-offline.html "$TMP_DIR/"
+  cp schedule8-offline.html schedule8-masterpiece.html "$TMP_DIR/"
   cp lra-full.html "$TMP_DIR/"
-  cp jquery.min.js lunr.min.js turn.min.js "$TMP_DIR/"
+  cp aos.css aos.js jquery.min.js lunr.min.js turn.min.js "$TMP_DIR/"
   cp README.md "$TMP_DIR/" 2>/dev/null || true
   zip -r gift-package.zip -j "$TMP_DIR"/*
   rm -r "$TMP_DIR"

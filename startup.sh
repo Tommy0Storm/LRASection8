@@ -158,6 +158,7 @@ install_global_packages(){
     esbuild
     turbo
     lerna
+    sentry-cli
     vercel
     netlify-cli
     create-react-app
@@ -343,6 +344,11 @@ install_local_packages(){
     eslint-plugin-no-secrets
     eslint-plugin-regexp
     eslint-plugin-svelte3
+    eslint-plugin-react-refresh
+    eslint-plugin-you-dont-need-lodash-underscore
+    eslint-plugin-no-unsanitized
+    prettier-plugin-organize-imports
+    cspell
     svelte-check
   )
   log "Installing project dependencies"

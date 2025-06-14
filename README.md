@@ -50,6 +50,10 @@ Interactive reference for Section 8 of the South African Labour Relations Act.
 - Setup script `startup.sh` installs required libraries and developer tooling
 - Startup script also installs tools like **pnpm**, **gulp-cli**, **commitizen**,
   **typedoc**, **esbuild**, **turbo**, **lerna**, **vercel**, and **netlify-cli** for a streamlined modern workflow. It now adds linting plugins such as **eslint-plugin-unicorn**, **eslint-plugin-tailwindcss**, **prettier-plugin-tailwindcss** and security tooling like **owasp-dependency-check**. The dependency set has grown to include **React**, **Vue**, **Svelte**, **Chart.js**, **lodash** and **date-fns** for rapid development.
+- Recent updates install **sentry-cli** globally and add dev tools like **cspell**,
+  **prettier-plugin-organize-imports**, **eslint-plugin-react-refresh**,
+  **eslint-plugin-you-dont-need-lodash-underscore** and
+  **eslint-plugin-no-unsanitized** for enhanced quality checks.
 - Additional book libraries (PageFlip, ScrollMagic, Paged.js), epub.js for eBook rendering, OpenSeadragon for high-resolution images, FullPage.js for smooth transitions, and Typed.js for animated text
 
 ## Setup
@@ -76,6 +80,7 @@ And for quick reference to the complete Labour Relations Act, open `lra-full.htm
 
 ## Packaging the Gift
 
-Run `./package_gift.sh` to produce `gift-package.zip` containing the offline
-HTML pages and supporting assets. Share this archive to provide a
+Run `./package_gift.sh` to produce `gift-package.zip` containing both
+`schedule8-offline.html` and `schedule8-masterpiece.html` along with
+their supporting CSS and JavaScript assets. Share this archive to provide a
 self-contained reference that works without an internet connection.
