@@ -64,6 +64,7 @@ install_global_packages(){
     nodemon
     concurrently
     cross-env
+    yarn
     pm2
     http-server
     live-server
@@ -112,6 +113,7 @@ install_local_packages(){
     fullpage.js
     typed.js
     lottie-web
+    dotenv
   )
   local dev_deps=(
     eslint
@@ -133,6 +135,8 @@ install_local_packages(){
     eslint-config-prettier
     eslint-plugin-import
     eslint-plugin-node
+    eslint-plugin-react
+    eslint-plugin-jsx-a11y
     mocha
     chai
     nyc
@@ -142,6 +146,9 @@ install_local_packages(){
     htmlhint
     stylelint
     markdownlint-cli
+    prettier-plugin-jsdoc
+    npm-check-updates
+    dotenv-cli
     eslint-config-airbnb-base
     eslint-plugin-promise
     http-server
