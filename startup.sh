@@ -112,6 +112,10 @@ install_global_packages(){
     gitmoji-cli
     ngrok
     node-inspector
+    nx
+    degit
+    bunyan
+    open-cli
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
