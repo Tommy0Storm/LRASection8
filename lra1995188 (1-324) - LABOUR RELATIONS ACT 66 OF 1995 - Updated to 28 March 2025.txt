@@ -8729,7 +8729,7 @@ Page 250:
 
 # lra1995188 [251-324]
 
-Page 1:
+Page 251:
 ===
 
 (a) the registered trade unions to be admitted, the Commission must decide which trade unions should be admitted;
@@ -8759,7 +8759,7 @@ Schedule 2 GUIDELINES FOR CONSTITUTION OF WORKPLACE FORUM
 The formula to determine the number of seats in the workplace forum should reflect the size, nature, occupational structure and physical location of the workplace. A guideline may be-
 
 
-Page 2:
+Page 252:
 ===
 
 a) in a workplace in which 100 to 200 employees are employed, five members;
@@ -8802,7 +8802,7 @@ Example-
 (b) If the trade union and the employer cannot agree, the trade union may apply to the Commission to appoint an election officer.
 
 
-Page 3:
+Page 253:
 ===
 
 (c) The Commission must appoint an election officer to conduct a by-election only if it is satisfied that the workplace forum cannot function adequately without a by-election.
@@ -8836,7 +8836,7 @@ Page 3:
 (f) Every employee is entitled to vote in the election of the workplace forum during working hours at the employer's premises.
 
 
-Page 4:
+Page 254:
 ===
 
 (g) Every employee in the workplace is entitled to cast a number of votes equal to the number of members to be elected to the workplace forum.
@@ -8872,7 +8872,7 @@ iv) if the member's employment is terminated;
 (d) Twenty per cent of the employees in the workplace may submit a signed petition to the Commission applying for the removal from office of a member of the workplace forum on the grounds of gross dereliction of the duties of office.
 
 
-Page 5:
+Page 255:
 ===
 
 (e) An application to remove a member of a workplace forum from office must be decided by arbitration under the auspices of the Commission.
@@ -8906,7 +8906,7 @@ Example 2-
 In a workplace that is geographically dispersed, the meetings with the employees need not be with all the members of the workplace forum, but with one or more members of the workplace forum.
 
 
-Page 6:
+Page 256:
 ===
 
 7. Time off for members of workplace forum section 82(1)(p)
@@ -8942,7 +8942,7 @@ i. (ii) administrative and secretarial facilities that are appropriate to enable
 (c) The costs incurred by the employer in complying with the provisions of paragraphs (a) and (b) must be reasonable, having regard to the size and capabilities of the employer.
 
 
-Page 7:
+Page 257:
 ===
 
 9. Experts section 82(1)(t)
@@ -8970,7 +8970,7 @@ Example-
 A bank with a head office may have many branches dispersed around the country. If the branches are not regarded as separate workplaces, the bank may have one workplace forum for all its employees or the constitution may allow for the establishment of a co-ordinating workplace forum at head office level and in certain or all of the branches allow the establishment of subsidiary workplace forums that will deal with matters that affect only the employees in those branches.
 
 
-Page 8:
+Page 258:
 ===
 
 SCHEDULE 3 COMMISSION FOR CONCILIATION, MEDIATION AND ARBITRATION
@@ -9006,7 +9006,7 @@ The Minister, after consulting the Minister of Finance, must determine the remun
 (2) The Minister must fill a vacancy in the governing body as soon as is practicable. In the meantime, the Commission's proceedings and decisions continue to be valid.
 
 
-Page 9:
+Page 259:
 ===
 
 (3) If a vacancy-
@@ -9034,7 +9034,7 @@ Page 9:
 (5) A defect or error in the appointment of a member of the Commission does not affect the validity of the Commission's proceedings or decisions.
 
 
-Page 10:
+Page 260:
 ===
 
 5. Director of Commission
@@ -9072,7 +9072,7 @@ The governing body must open and maintain an account in the name of the Commissi
 (b) make all payments on behalf of the Commission from that account.
 
 
-Page 11:
+Page 261:
 ===
 
 7. Investment of surplus money
@@ -9102,7 +9102,7 @@ The Commission must, to the standards of generally accepted accounting practice,
 [Schedule 3 commencement: 1 January 1996.]
 
 
-Page 12:
+Page 262:
 ===
 
 Schedule 4 DISPUTE RESOLUTION: FLOW DIAGRAMS*
@@ -9136,7 +9136,7 @@ FLOW DIAGRAM 8 - ESSENTIAL SERVICES - (Dispute of interest in essential service)
 FLOW DIAGRAM 9 - WORKPLACE FORUM (1) - (Joint Decision Making) - CHAPTER V (Section 86)
 
 
-Page 13:
+Page 263:
 ===
 
 FLOW DIAGRAM 10 - UNFAIR DISMISSAL (1) - (Automatically Unfair Reasons) - CHAPTER VIII (Section 191)
@@ -9164,7 +9164,7 @@ Section 35 of the Occupational Health and Safety Act, 1993 (Act 85 of 1993), is 
 (a) by the substitution for the words "industrial court", wherever they occur in subsection (3), of the words Labour Court; and
 
 
-Page 14:
+Page 264:
 ===
 
 (b) by the substitution for subsection (4) of the following subsection-
@@ -9190,7 +9190,7 @@ Section 2(1) of the Medical Schemes Act, 1967 (Act 72 of 1967), is hereby amende
 (ii) a particular medical scheme which was established or continued in the circumstances mentioned in subparagraph (i) and which, in terms of a collective agreement so concluded in that council after the coming into operation of the Labour Relations Amendment Act, 1998, is continued or further continued (as the case may
 
 
-Page 15:
+Page 265:
 ===
 
 be),
@@ -9224,7 +9224,7 @@ Section 3(1) of the Friendly Societies Act, 1956, is hereby amended by the subst
 [Item 7 inserted by s 27(b) of Act 127 of 1998.]
 
 
-Page 16:
+Page 266:
 ===
 
 Schedule 6 LAWS REPEALED BY SECTION 212
@@ -9286,7 +9286,7 @@ PART A - DEFINITIONS FOR THIS SCHEDULE
 In this Schedule, unless the context otherwise indicates-
 
 
-Page 17:
+Page 267:
 ===
 
 "Agricultural Labour Act" means the Agricultural Labour Act, 1993 (Act 147 of 1993);
@@ -9324,7 +9324,7 @@ PART B - UNFAIR LABOUR PRACTICES
 [Schedule 7 item 3 amended by s 64 of Act 55 of 1998; repealed by s 55(a) of Act 12 of 2002.]
 
 
-Page 18:
+Page 268:
 ===
 
 4. ...
@@ -9352,7 +9352,7 @@ PART C - PROVISIONS CONCERNING EXISTING TRADE UNIONS, EMPLOYERS' ORGANISATIONS, 
 (5) If a trade union or employers' organisation to comply with a direction issued to it in terms of subitem (4), the registrar must notify the trade union or employers' organisation that cancellation of its registration is being considered because of the failure, and give the trade union or employers' organisation an opportunity to show cause why its registration should not be cancelled within 30 days of the notice.
 
 
-Page 19:
+Page 269:
 ===
 
 (6) If, when the 30 day period expires, the relevant trade union or employers' organisation has not shown cause why its registration should not be cancelled, the registrar must cancel the registration of that trade union or employers' organisation by removing its name from the appropriate register or take other lesser steps that are appropriate register or take other lesser steps that are appropriate and not inconsistent with this Act.
@@ -9378,7 +9378,7 @@ Page 19:
 a) may condone any technical non-compliance with the provisions of this Act; and
 
 
-Page 20:
+Page 270:
 ===
 
 (b) may require the applicant to amend its application within 60 days in order to comply with the provisions of this Act.
@@ -9406,7 +9406,7 @@ Page 20:
 (a) if the bargaining council has failed, within the time contemplated in section 111(3), to appeal to the Labour Court against the cancellation, when that period expires; or
 
 
-Page 21:
+Page 271:
 ===
 
 (b) if the bargaining council has lodged an appeal, when the decision of the registrar has been confirmed by the Labour Court.
@@ -9436,7 +9436,7 @@ Any pending enquiry conducted by the industrial registrar under section 12(3) of
 The provisions in item 6 apply, read with the changes required by the context, to any pending application for the alteration of the constitution or the name of an industrial council in terms of the Labour Relations Act.
 
 
-Page 22:
+Page 272:
 ===
 
 10. Pending applications for admission of parties to industrial councils
@@ -9462,7 +9462,7 @@ Any pending application to wind up or to cancel the registration of a trade unio
 (i) if it expires before the end of the 18 month period referred to in paragraph (a), may be extended or declared effective in accordance with the provisions of subsection (4)(a) of section 48 of the Labour Relations Act, for a period ending before or on the
 
 
-Page 23:
+Page 273:
 ===
 
 expiry of that 18 month period, which provisions, as well as any other provisions of the Labour Relations Act relating to industrial council agreements extended or declared effective in terms of that subsection, will apply in all respects, read with the changes required by the context, in relation to any agreement extended or declared effective on the authority of this subparagraph as if those various provisions had not been repealed. However, the Minister may not on the authority of this subparagraph declare an agreement to be effective if it expires after 31 March 1997;
@@ -9484,7 +9484,7 @@ expiry of that 18 month period, which provisions, as well as any other provision
 (a) An agreement referred to in subitem (1) that had been concluded in a council deemed by item 7(1) to be a bargaining council, may be amended or amplified by a further agreement concluded in that bargaining council and promulgated in accordance with the provisions of subsections (1) and (2) of section 48 of the Labour Relations Act, which provisions will apply in all respects, read with the changes required by the context, for the purposes of this paragraph as if they had not been repealed.
 
 
-Page 24:
+Page 274:
 ===
 
 (b) Subitems (1)(b), (3) and (8)(a) will apply to any further agreement concluded and promulgated on the authority of paragraph (a) of this subitem, in all respects as if it were an agreement referred to in subitem (1)(a).
@@ -9508,7 +9508,7 @@ Page 24:
 [Schedule 7 item 12(5A) inserted by GN R1734 of 1996 with effect from 1 November 1996, s 28(1)(a) of Act 127 of 1998 with effect from 11 November 1996.]
 
 
-Page 25:
+Page 275:
 ===
 
 (5B) Any one or more of or all the provisions of an order referred to in subitem (1)(a), may be cancelled, suspended or amended by the Minister in accordance with the provisions of section 51A(4)(a) of the Labour Relations Act, which provisions will apply for the purposes of this subitem as if they had not been repealed.
@@ -9534,7 +9534,7 @@ Page 25:
 (b) any person bound by an order remaining in force in terms of subitem (1), may apply in accordance with the provisions of section 51A of the Labour Relations Act for exemption from any provision of that order. Any application so made, must be dealt with in terms of
 
 
-Page 26:
+Page 276:
 ===
 
 the provisions of section 51A and, whenever applicable, any other relevant provisions, of the Labour Relations Act, in all respects as if the provisions in question had not been repealed.
@@ -9568,7 +9568,7 @@ the provisions of section 51A and, whenever applicable, any other relevant provi
 (2) Any agreement that was in force immediately before the commencement of this Act is deemed to be a collective agreement concluded in terms of this Act.
 
 
-Page 27:
+Page 277:
 ===
 
 (3) Any registered trade union that is party to an agreement referred to in subitems (1) and (2) in terms of which that trade union was recognised for the purposes of collective bargaining is entitled to the organisational rights conferred by sections 11 to 16 of Chapter III and in respect of employees that it represents in terms of the agreement, for so long as the trade union remains recognised in terms of the agreement as the collective bargaining agent of those employees.
@@ -9594,7 +9594,7 @@ PART D - MATTERS CONCERNING PUBLIC SERVICE
 (5) If a chamber fails to comply with a direction issued to it in terms of subitem (5), the registrar must-
 
 
-Page 28:
+Page 278:
 ===
 
 (a) determine the amendments to the constitution in order to meet the requirements of section 30; and
@@ -9626,7 +9626,7 @@ The following provisions, read with the changes required by the context, of the 
 (g) section 10(4) and (5);
 
 
-Page 29:
+Page 279:
 ===
 
 (h) section 12;
@@ -9656,7 +9656,7 @@ Page 29:
 (v) the conciliation board does not succeed in settling the dispute within the period contemplated in subsection (7); or
 
 
-Page 30:
+Page 280:
 ===
 
 (vi) the parties to the dispute agree that they will not be able to settle the dispute and submit written proof thereof to the Commission or relevant court."; and
@@ -9684,7 +9684,7 @@ Page 30:
 (7) Any pending appeal before the industrial court or an arbitrator against a decision of the Education Labour Relations Council must, despite the repeal of any of the labour relations laws, be dealt with by the industrial court or arbitrator as if the application had been made in terms of this Act.
 
 
-Page 31:
+Page 281:
 ===
 
 (8) Despite the repeal of the Education Labour Relations Act, any appeal against a decision of the Education Labour Relations Council may be instituted after the commencement of this Act and must be heard by the Labour Court and dealt with as if the application had been made in terms of this Act.
@@ -9712,7 +9712,7 @@ The following provisions, read with the changes required by the context, of the 
 (3) Within 14 days of the commencement of this Act, or signing of its constitution by its authorised representatives, whichever is the latter, the National Negotiating Forum must furnish the registrar with a copy of its constitution signed by its authorised representatives, and with the other information or documentation.
 
 
-Page 32:
+Page 282:
 ===
 
 (4) The constitution agreed to by the National Negotiating Forum is deemed to be in compliance with this Act. However where any provision of the constitution does not comply with the requirements of section 30, the registrar may direct the National Negotiating Forum to rectify its constitution and re-submit the rectified constitution within 14 days.
@@ -9740,7 +9740,7 @@ When the Public Service Co-ordinating Bargaining Council is established in terms
 (c) the Education Labour Relations Council will be deemed to be a bargaining council that has been established in terms of section 37(3)(b) of this Act for the education sector;
 
 
-Page 33:
+Page 283:
 ===
 
 (d) the National Negotiating Forum will be deemed to be a bargaining council that has been established in terms of section 37(3)(b) of this Act for the South African Police Service.
@@ -9768,7 +9768,7 @@ PART E - DISPUTES AND COURTS
 (3) A council must refer to the Commission, for arbitration, any dispute that-
 
 
-Page 34:
+Page 284:
 ===
 
 (a) was referred to the council in terms of this Act on the authority of subitem (1); and
@@ -9796,7 +9796,7 @@ Page 34:
 (3) Any pending appeal before the Labour Appeal Court established by section 17A of the Labour Relations Act must be dealt with by the Labour Appeal Court as if the labour relations laws had not been repealed.
 
 
-Page 35:
+Page 285:
 ===
 
 (4) Any pending appeal from a decision of that Labour Appeal Court of any appeal to the Appellate Division from a decision of the Labour Appeal Court in terms of section 17C and section 64 of the Labour Relations Act must be dealt with as if the labour relations laws and not been repealed.
@@ -9826,7 +9826,7 @@ Page 35:
 (c) has the effect of substituting the Commission for the industrial court in so far as all other pending matters are concerned.
 
 
-Page 36:
+Page 286:
 ===
 
 (3) In the application of this item-
@@ -9854,7 +9854,7 @@ PART F - PENSION MATTERS
 (a) the pension fund of which the officer or employee was a member ("the former fund") must transfer to the pension fund of which the officer or employee becomes a member of ("the new fund") an amount equal to the funding level of the former fund multiplied by its actuarial liability in respect of that officer or employee at the date the officer or employee assumes
 
 
-Page 37:
+Page 287:
 ===
 
 office with the Commission, increased by the amount of interest calculated on that amount at the prime rate of interest from the date when employment with the Commission commenced up to the date of transfer of the amount;
@@ -9874,7 +9874,7 @@ office with the Commission, increased by the amount of interest calculated on th
 "actuarial liability" of a pension fund in respect of a particular member or a group of members of the fund, means the actuarial liability that is determined by an actuary who the Minister has nominated for that purpose;
 
 
-Page 38:
+Page 288:
 ===
 
 "funding level", in relation to a pension fund, means the market value of the assets of the fund stated as a percentage of the total actuarial liability of the fund, after those assets and liabilities have been reduced by the amount of the liabilities of the fund in respect of all its pensioners, as determined at the time of the most recent actuarial valuation of the fund or any review thereof carried out under direction of the responsible Minister; and
@@ -9900,7 +9900,7 @@ PART G - ESSENTIAL SERVICES
 (1) The services in which employers referred to in paragraphs (a) and (b) of section 46(1) of the Labour Relations Act, and employees referred to in paragraphs (e) and (f) of that section, are engaged, as well as any service contemplated in paragraph (a) or (b) of section 46(7) of that Act in which the employers and employees to whom a notice in terms of the latter section applied immediately before the commencement of this Act, are engaged, will be deemed to have been designated essential services in terms of this Act for a period ending on a date 10 months after the commencement of this Act or on the date of the publication of the notice of designation mentioned in subitem (2), in the Government Gazette, whichever date occurs first.
 
 
-Page 39:
+Page 289:
 ===
 
 (2) The essential services committee must, in the case of the services contemplated in subitem (1), as soon as possible after the commencement of this Act make a new designation, under section 71 of this Act, of services that are essential services. Such a designation will be effective from the date of the publication of the notice of the designation in the Government Gazette in terms of section 71(8) of this Act.
@@ -9934,7 +9934,7 @@ In this part-
 (i) section 138(4) read with section 140(1) of the Act for disputes about a dismissal; and
 
 
-Page 40:
+Page 290:
 ===
 
 (ii) section 138(4) of the Act for disputes about an unfair labour practice.
@@ -9976,7 +9976,7 @@ TABLE ONE: MAXIMUM PERMISSIBLE FINE NOT INVOLVING AN UNDERPAYMENT
 | to comply in                   | of whom the                   |
 
 
-Page 41:
+Page 291:
 ===
 
 respect of the same provision within three years
@@ -10022,7 +10022,7 @@ TABLE TWO: MAXIMUM PERMISSIBLE FINE INVOLVING AN UNDERPAYMENT
 (c) Subitem (a) does not apply to an unfair labour practice in relation to probation.
 
 
-Page 42:
+Page 292:
 ===
 
 31. Bargaining councils in public service
@@ -10052,7 +10052,7 @@ Schedule 8 CODE OF GOOD PRACTICE: DISMISSAL
 (2) This Act emphasises the primacy of collective agreements. This Code is not intended as a substitute for disciplinary codes and procedures where these are the subject of collective agreements, or the outcome of joint decision-making by an employer and a workplace forum.
 
 
-Page 43:
+Page 293:
 ===
 
 (3) The key principle in this Code is that employers and employees should treat one another with mutual respect. A premium is placed on both employment justice and the efficient operation of business. While employees should be protected from arbitrary action, employers are entitled to satisfactory conduct and work performance from their employees.
@@ -10076,7 +10076,7 @@ Disciplinary procedures prior to dismissal
 (1) All employers should adopt disciplinary rules that establish the standard of conduct required of their employees. The form and content of disciplinary rules will obviously vary according to the size and nature of the employer's business. In general, a larger business will require a more formal approach to discipline. An employer's rules must create certainty and consistency in the application of discipline. This requires that the standards of conduct are clear and made available to employees in a manner that is easily understood. Some rules of standards may be so well established and known that it is not necessary to communicate them.
 
 
-Page 44:
+Page 294:
 ===
 
 (2) The courts have endorsed the concept of corrective or progressive discipline. This approach regards the purpose of discipline as a means for employees to know and understand what standards are required of them. Efforts should be made to correct employees' behaviour through a system of graduated disciplinary measures such as counselling and warnings.
@@ -10094,7 +10094,7 @@ Page 44:
 (1) Normally, the employer should conduct an investigation to determine whether there are grounds for dismissal. This does not need to be a formal enquiry. The employer should notify the employee of the allegations using a form and language that the employee can reasonably understand. The employee should be allowed the opportunity to state a case in response to the allegations. The employee should be entitled to a reasonable time to prepare the response and to the assistance of a trade union representative or fellow employee. After the enquiry, the employer should communicate the decision taken, and preferably furnish the employee with written notification of that decision.
 
 
-Page 45:
+Page 295:
 ===
 
 (2) Discipline against a trade union representative or an employee who is an office-bearer or official of a trade union should not be instituted without first informing and consulting the trade union.
@@ -10120,7 +10120,7 @@ Employers should keep records for each employee specifying the nature of any dis
 (2) Prior to dismissal the employer should, at the earliest opportunity, contact a trade union official to discuss the course of action it intends to adopt. The employer should issue an ultimatum in clear and unambiguous terms that should state what is required of the employees and what sanction will be imposed if they do not comply with the ultimatum. The employees should be allowed sufficient time to reflect on the ultimatum and respond to it, either by complying with it or rejecting it. If the employer cannot reasonably be expected to extend these steps to the employees in question, the employer may dispense with them.
 
 
-Page 46:
+Page 296:
 ===
 
 7. Guidelines in cases of dismissal for misconduct
@@ -10154,7 +10154,7 @@ Probation
 (d) The period of probation should be determined in advance and be of reasonable duration. The length of the probationary period should be determined with reference to the nature of the job and the time it takes to determine the employee's suitability for continued employment.
 
 
-Page 47:
+Page 297:
 ===
 
 (e) During the probationary period, the employee's performance should be assessed. An employer should give an employee reasonable evaluation, instruction, training, guidance or counselling in order to allow the employee to render a satisfactory service.
@@ -10178,7 +10178,7 @@ Page 47:
 (b) after a reasonable period of time for improvement, the employee continues to perform unsatisfactorily.
 
 
-Page 48:
+Page 298:
 ===
 
 (3) The procedure leading to dismissal should include an investigation to establish the reasons for the unsatisfactory performance and the employer should consider other ways, short of dismissal, to remedy the matter.
@@ -10204,7 +10204,7 @@ Any person determining whether a dismissal for poor work performance is unfair s
 (1) Incapacity on the grounds of ill health or injury may be temporary or permanent. If an employee is temporarily unable to work in these circumstances, the employer should investigate the extent of the incapacity or the injury. If the employee is likely to be absent for a time that is unreasonably long in the circumstances, the employer should investigate all the possible alternatives short of dismissal. When alternatives are considered, relevant factors might include the nature of the job, the period of absence, the seriousness of the illness of injury and the possibility of securing a temporary replacement for the ill or injured employee. In cases of permanent incapacity, the employer should ascertain the possibility of securing alternative employment, or adapting the duties or work circumstances of the employee to accommodate the employee's disability.
 
 
-Page 49:
+Page 299:
 ===
 
 (2) In the process of the investigation referred to in subsection (1) the employee should be allowed the opportunity to state a case in response and to be assisted by a trade union representative or fellow employee.
@@ -10234,7 +10234,7 @@ CONSTITUTION OF
 Note: This is a model constitution. The parties to the council are free to draft their own constitution or to adapt this model to suit their own requirements provided the constitution complies with the provisions of the Act.
 
 
-Page 50:
+Page 300:
 ===
 
 1. Name
@@ -10270,7 +10270,7 @@ Note: There is an alternative method of giving effect to section 43(2) of the Ac
 (a) the following employers' organisation(s)-
 
 
-Page 51:
+Page 301:
 ===
 
 Image With Text:
@@ -10306,7 +10306,7 @@ Image With Text:
 (5) If the council refuses to admit an applicant it must, within 30 days of the date of the refusal, advise the applicant in writing of its decision and the reasons for that decision.
 
 
-Page 52:
+Page 302:
 ===
 
 5. Appointment of representatives
@@ -10348,7 +10348,7 @@ Note: The allocation may be determined according to a formula based on represent
 (a) its representatives to the council; and
 
 
-Page 53:
+Page 303:
 ===
 
 (b) an alternate for each of its representatives.
@@ -10384,7 +10384,7 @@ Page 53:
 (i) receiving a request for that purpose, stating the purpose of the special meeting and signed by not less than representatives; or
 
 
-Page 54:
+Page 304:
 ===
 
 (ii) the adoption of a resolution by the council calling for a special meeting.
@@ -10414,7 +10414,7 @@ Note: There is no restriction as to the kind of service. The constitution can st
 (6) If, at the time fixed for a meeting to begin or continue, and for 30 minutes after that time, there is no quorum present, the meeting must be adjourned to the same place at the same time on the corresponding day in the following week unless that day is a public holiday, in which case the meeting must be adjourned to the day immediately after that public holiday.
 
 
-Page 55:
+Page 305:
 ===
 
 (7) A meeting that has been adjourned in terms of subclause (6) may proceed on the date to which it was adjourned with the representatives present at the time called for the meeting, regardless of whether or not notice has been given in terms of subclause (4) and whether or not a quorum is present.
@@ -10440,7 +10440,7 @@ Note: The constitution could stipulate that certain matters should be decided by
 (14) The executive committee may adopt general rules of procedure for its meetings and for the meetings of the council and its other committees. However, in the event of any conflict between those rules and the provisions of this constitution, the provisions of this constitution will prevail.
 
 
-Page 56:
+Page 306:
 ===
 
 7. Executive committee
@@ -10476,7 +10476,7 @@ Election and appointment of additional members of the executive committee.
 (a) An additional member of the executive committee will hold office for 12 months and will be eligible for re-election at the end of that term.
 
 
-Page 57:
+Page 307:
 ===
 
 (b) An additional member of the executive committee whose term of office has expired and who is not re-elected, may nevertheless continue to act as a member of the executive committee until that member's successor assumes office.
@@ -10510,7 +10510,7 @@ Page 57:
 (b) must be called by the chairperson within ......... days of receiving a request for that purpose, stating the purpose of the special meeting and signed by not less than members of the executive committee.
 
 
-Page 58:
+Page 308:
 ===
 
 (9) The secretary must prepare a written notice of every executive meeting showing the date, time and venue of the commit meeting and the business to be transacted, and must send the notice to each member of the committee by registered post at least days before the date of the meeting. However, the chairperson may authorise shorter notice for a special meeting.
@@ -10540,7 +10540,7 @@ Note: For example, a council that has been established for two or more sectors, 
 (ii) office-bearers or officials of the parties to the council.
 
 
-Page 59:
+Page 309:
 ===
 
 (3) A majority of the total number of the members of a committee forms a quorum and must be present before the meeting may begin or continue.
@@ -10572,7 +10572,7 @@ Page 59:
 (a) Upon having been declared elected, the new chairperson must preside over the meeting
 
 
-Page 60:
+Page 310:
 ===
 
 and must call for nominations for the office of deputy chairperson.
@@ -10602,7 +10602,7 @@ and must call for nominations for the office of deputy chairperson.
 10) If both the chairperson and deputy chairperson are absent or unable to act or to perform the functions and duties of the chairperson, the council, by a show of hands, must elect from the representatives a person to act as chairperson and to perform those functions and duties.
 
 
-Page 61:
+Page 311:
 ===
 
 (11) A chairperson or a deputy chairperson who has not been elected from amongst the representatives in the council is not entitled to vote on any matter before the council or the executive committee.
@@ -10632,7 +10632,7 @@ Page 61:
 (2) The secretary must-
 
 
-Page 62:
+Page 312:
 ===
 
 (a) retain a copy of the confirmed and signed minutes of every meeting of the council, the executive committee and any other committee of the council in safe custody at the office of the council for a period of at least three years from the date those minutes were confirmed;
@@ -10658,7 +10658,7 @@ Page 62:
 (b) a panel of arbitrators, consisting of members, for the purpose of determining disputes.
 
 
-Page 63:
+Page 313:
 ===
 
 (2) The council may remove a member of the panel of conciliators or arbitrators from office-
@@ -10690,7 +10690,7 @@ Note: A dispute about the interpretation or application of the provisions of Cha
 (3) Any party to a dispute may refer the dispute in writing to the council.
 
 
-Page 64:
+Page 314:
 ===
 
 (4) The party who refers the dispute must satisfy the secretary that a copy of the referral has been served on all the other parties to the dispute.
@@ -10734,7 +10734,7 @@ The Act requires councils to arbitrate the following types of disputes:
 (b) it is a dispute about the interpretation or application of the provisions of this constitution.
 
 
-Page 65:
+Page 315:
 ===
 
 (2) Any party to a dispute may request that the dispute be resolved through arbitration.
@@ -10766,7 +10766,7 @@ Page 65:
 (5) If no negotiation process is agreed-
 
 
-Page 66:
+Page 316:
 ===
 
 (a) the secretary must appoint a conciliator from the panel or conciliators to facilitate negotiations and the conclusion of a collective agreement;
@@ -10798,7 +10798,7 @@ Page 66:
 (i) if they participate in a strike, will forfeit the protection they would have enjoyed in terms of section 67 of the Act;
 
 
-Page 67:
+Page 317:
 ===
 
 (ii) if they are engaged in a lock-out, will forfeit the protection they would have enjoyed in terms of section 67 of the Act.
@@ -10830,7 +10830,7 @@ Page 67:
 (b) made by cheques drawn on the council's bank account and signed by the chairperson or deputy-chairperson and counter-signed by the secretary. However, the council, by special resolution, may authorise any representative in the council, official or employee of the council to sign or counter-sign cheques drawn on the council's bank account in the event of both the chairperson and the deputy chairperson or the secretary not being readily available for that purpose.
 
 
-Page 68:
+Page 318:
 ===
 
 (5)
@@ -10862,7 +10862,7 @@ Page 68:
 (ii) amounts paid to representatives and alternates in respect of their attendance at meetings, the travelling and subsistence expenses incurred by them, and the salary or wage deducted or not received by them due to their absence from work by reason of their involvement with the council;
 
 
-Page 69:
+Page 319:
 ===
 
 (iii) remuneration and allowances of members of the panel of conciliators and arbitrators;
@@ -10896,7 +10896,7 @@ Page 69:
 (a) application is immediately made to the Labour Court for an order giving effect to that resolution; and
 
 
-Page 70:
+Page 320:
 ===
 
 (b) the council's books and records of account and an inventory of its assets, including funds and investments, are delivered to the liquidator appointed by the Labour Court, and that whatever may be necessary is done to place the assets, funds and investments of the council at the disposal and under the control of that liquidator.
@@ -10928,7 +10928,7 @@ Page 70:
 (2) Any amendment to this constitution becomes effective after the resolution effecting that amendment has been certified by the registrar in terms of section 57(3) of the Act.
 
 
-Page 71:
+Page 321:
 ===
 
 18. Necessary first steps
@@ -10960,7 +10960,7 @@ Necessary first steps to be followed by council
 (a) the council, by a show of hands, must select a suitable person to act as chairperson of that meeting, subject to paragraph (c), as well as another to keep the minutes of the meeting;
 
 
-Page 72:
+Page 322:
 ===
 
 (b) the council must elect the chairperson and the deputy chairperson and the additional members of the executive committee in the manner set out in clauses 9 and 7 respectively, read with the changes required by the context;
@@ -10992,7 +10992,7 @@ Schedule 10 POWERS OF DESIGNATED AGENT OF BARGAINING COUNCIL
 (b) if authorised to do so by the Labour Court in terms of subitem (3).
 
 
-Page 73:
+Page 323:
 ===
 
 (3) The Labour Court may issue an authorisation contemplated in subitem (2)(b) only on written application by a designated agent who states under oath or affirmation the reasons for the need to enter a place, in order to monitor or enforce compliance with a collective agreement concluded in the bargaining council.
@@ -11024,7 +11024,7 @@ Page 73:
 (b) provide a receipt for any record or document removed in terms of subitem (5)(e); and
 
 
-Page 74:
+Page 324:
 ===
 
 (c) return any removed record, document or item within a reasonable time.
