@@ -42,6 +42,10 @@ install_global_packages(){
     webpack-bundle-analyzer
     typescript
     snyk
+    commitlint
+    nodemon
+    concurrently
+    cross-env
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
@@ -81,6 +85,12 @@ install_local_packages(){
     lighthouse-ci
     webpack-bundle-analyzer
     typescript
+    ts-node
+    concurrently
+    nodemon
+    eslint-plugin-security
+    @commitlint/cli
+    @commitlint/config-conventional
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
