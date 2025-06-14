@@ -52,6 +52,9 @@ install_global_packages(){
     eslint
     prettier
     husky
+    mocha
+    nyc
+    ava
     lighthouse
     npm-run-all
     webpack-bundle-analyzer
@@ -121,9 +124,17 @@ install_local_packages(){
     webpack-bundle-analyzer
     typescript
     ts-node
+    ts-node-dev
     concurrently
     nodemon
     eslint-plugin-security
+    eslint-config-prettier
+    eslint-plugin-import
+    eslint-plugin-node
+    mocha
+    chai
+    nyc
+    ava
     @commitlint/cli
     @commitlint/config-conventional
     htmlhint

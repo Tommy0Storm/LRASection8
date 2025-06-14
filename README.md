@@ -35,9 +35,9 @@ Interactive reference for Section 8 of the South African Labour Relations Act.
 - Additional book libraries (PageFlip, ScrollMagic, Paged.js), epub.js for eBook rendering, OpenSeadragon for high-resolution images, FullPage.js for smooth transitions, and Typed.js for animated text
 
 ## Setup
-Run `./startup.sh` to install dependencies. The script detects your OS and installs Node.js and all project packages. It is safe to run multiple times.
+Run `./startup.sh` to install dependencies. The script detects your OS and installs Node.js and all project packages. It now includes additional testing frameworks like Mocha and Ava along with advanced linting utilities. The script is safe to run multiple times.
 Section 8 of the LRA for Disciplinary hearings
-This project now includes interactive Schedule 8 content with an animated flipbook and search functionality. Run `startup.sh` to install recommended development dependencies.
+This project now includes interactive Schedule 8 content with an animated flipbook and search functionality. Run `startup.sh` to install recommended development dependencies and debugging tools.
 
 Interactive guide to Section 8 of the Labour Relations Act.
 
