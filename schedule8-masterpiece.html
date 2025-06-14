@@ -15,6 +15,7 @@
     
     <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/css/page-flip.browser.min.css">
     <link rel='stylesheet' href='aos.css'>
     <!-- Animation & Book Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -552,6 +553,20 @@
         ::-webkit-scrollbar-thumb:hover {
             background: var(--primary-navy);
         }
+        /* Flipbook Styles */
+        .flipbook-section {
+            padding: var(--space-xl) 0;
+            background: var(--background-section);
+            text-align: center;
+        }
+        .flipbook {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .flipbook .page {
+            background: #fff;
+            border: 1px solid var(--border-subtle);
+            padding: var(--space-md);
         .search-bar {
             margin-top: var(--space-sm);
             text-align: center;
@@ -820,6 +835,24 @@
         </div>
     </section>
 
+    <!-- Interactive Book -->
+    <section class="flipbook-section">
+        <h2 class="section-title">Interactive Schedule 8 Book</h2>
+        <div id="flipbook" class="flipbook">
+            <div class="page">
+                <h3>Overview</h3>
+                <p>An engaging summary of Schedule 8 principles for employers and chairpersons.</p>
+            </div>
+            <div class="page">
+                <h3>Progressive Discipline</h3>
+                <p>Clear guidance on warnings and dismissal procedures.</p>
+            </div>
+            <div class="page">
+                <h3>Key Tips</h3>
+                <p>Essential notes to ensure fairness in labour practices.</p>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
@@ -1127,6 +1160,25 @@
                 }, 0);
             });
         }
+        // Flipbook initialization
+        const loadFlip = () => {
+            if (!document.getElementById('flipbook')) return;
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js';
+            script.onload = () => {
+                const pageFlip = new St.PageFlip(document.getElementById('flipbook'), {
+                    width: 550,
+                    height: 400,
+                    size: 'stretch',
+                    maxShadowOpacity: 0.5,
+                    showCover: false,
+                    mobileScrollSupport: false
+                });
+                pageFlip.loadFromHTML(document.querySelectorAll('#flipbook .page'));
+            };
+            document.body.appendChild(script);
+        };
+        document.addEventListener('DOMContentLoaded', loadFlip);
     const idx=lunr(function(){this.field("title");this.field("body");document.querySelectorAll("[data-section]").forEach(s=>{this.add({id:s.id,title:s.querySelector(".card-title")?s.querySelector(".card-title").textContent:"",body:s.textContent});});});document.getElementById("searchBox").addEventListener("input",e=>{console.log(idx.search(e.target.value));});
     $("#flipbook").turn({width:400,height:500,autoCenter:true});
     anime({
