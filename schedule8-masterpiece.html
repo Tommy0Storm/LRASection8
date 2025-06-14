@@ -299,6 +299,12 @@
             list-style: none;
             gap: var(--space-lg);
         }
+        .nav-search input {
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-subtle);
+            font-size: 0.9rem;
+        }
 
         .nav-links a {
             color: white;
@@ -604,6 +610,11 @@
         }
         }
     </style>
+    <!-- Libraries for interactive features -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
 </head>
 <body>
     <!-- Loading Screen -->
@@ -623,6 +634,9 @@
                 <li><a href="#guide">Quick Guide</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="nav-search">
+                <input type="text" id="searchBox" placeholder="Search Schedule 8...">
+            </div>
         </div>
     </nav>
 
@@ -650,7 +664,7 @@
                         <div class="document-header">
                             <div class="document-title">Schedule 8</div>
                         </div>
-                        <div class="document-content">
+                        <div class="document-content" id="flipbook">
                             <div class="section-number">8.1</div>
                             <p><strong>Guidelines:</strong> Dismissals must be both substantively and procedurally fair...</p>
                             <div class="section-number" style="margin-top: 1rem;">8.2</div>
@@ -672,6 +686,7 @@
         </p>
         
         <div class="schedule-grid">
+            <div class="schedule-card" onclick="openSection(1)" data-section="1">
             <div class="schedule-card" data-aos="fade-up" onclick="openSection(1)">
                 <div class="card-number">8.1</div>
                 <h3 class="card-title">General Guidelines</h3>
@@ -688,6 +703,7 @@
                 </div>
             </div>
 
+            <div class="schedule-card" onclick="openSection(2)" data-section="2">
             <div class="schedule-card" data-aos="fade-up" onclick="openSection(2)">
                 <div class="card-number">8.2</div>
                 <h3 class="card-title">Disciplinary Action</h3>
@@ -704,6 +720,7 @@
                 </div>
             </div>
 
+            <div class="schedule-card" onclick="openSection(3)" data-section="3">
             <div class="schedule-card" data-aos="fade-up" onclick="openSection(3)">
                 <div class="card-number">8.3</div>
                 <h3 class="card-title">Misconduct Examples</h3>
@@ -720,6 +737,7 @@
                 </div>
             </div>
 
+            <div class="schedule-card" onclick="openSection(4)" data-section="4">
             <div class="schedule-card" data-aos="fade-up" onclick="openSection(4)">
                 <div class="card-number">8.4</div>
                 <h3 class="card-title">Incapacity Dismissals</h3>
@@ -736,6 +754,7 @@
                 </div>
             </div>
 
+            <div class="schedule-card" onclick="openSection(5)" data-section="5">
             <div class="schedule-card" data-aos="fade-up" onclick="openSection(5)">
                 <div class="card-number">8.5</div>
                 <h3 class="card-title">Operational Requirements</h3>
@@ -752,6 +771,7 @@
                 </div>
             </div>
 
+            <div class="schedule-card" onclick="openSection(6)" data-section="6">
             <div class="schedule-card" data-aos="fade-up" onclick="openSection(6)">
                 <div class="card-number">8.6</div>
                 <h3 class="card-title">Automatically Unfair Dismissals</h3>
@@ -1107,6 +1127,15 @@
                 }, 0);
             });
         }
+    const idx=lunr(function(){this.field("title");this.field("body");document.querySelectorAll("[data-section]").forEach(s=>{this.add({id:s.id,title:s.querySelector(".card-title")?s.querySelector(".card-title").textContent:"",body:s.textContent});});});document.getElementById("searchBox").addEventListener("input",e=>{console.log(idx.search(e.target.value));});
+    $("#flipbook").turn({width:400,height:500,autoCenter:true});
+    anime({
+        targets: ".hero-text h1",
+        translateY: [-50,0],
+        opacity: [0,1],
+        duration: 800,
+        easing: "easeOutQuad"
+    });
 // Initialize AOS animations
 AOS.init({ once: true });
 
