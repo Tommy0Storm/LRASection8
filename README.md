@@ -62,3 +62,4 @@ This project offers a unique digital experience for employers and chairpersons t
 - Works offline as a PWA
 
 Open `schedule8-masterpiece.html` in a modern web browser to begin. For an all-in-one page with no external dependencies, open `schedule8-offline.html`.
+To view the full Labour Relations Act alongside Schedule 8, open `combined-lra.html`.
