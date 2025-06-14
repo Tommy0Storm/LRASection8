@@ -1,6 +1,6 @@
 # LRASection8
 
-This project provides an interactive reference for Schedule 8 of the Labour Relations Act. The included `schedule8-masterpiece.html` page now features an animated flipbook section for a book-like reading experience.
+This project provides an interactive reference for Schedule 8 of the Labour Relations Act. The included `schedule8-masterpiece.html` page features a rich flipbook section for a book-like reading experience and search capabilities.
 
 ## Setup
 
@@ -20,6 +20,7 @@ Interactive reference for Section 8 of the South African Labour Relations Act.
 - Quick text search across sections using [lunr.js](https://lunrjs.com/)
 - Responsive design with professional typography
 - Setup script `startup.sh` installs required libraries and developer tooling
+- Additional book libraries (PageFlip, ScrollMagic, Paged.js)
 
 ## Setup
 Run `./startup.sh` to install dependencies. The script detects your OS and installs Node.js and all project packages. It is safe to run multiple times.
@@ -35,6 +36,8 @@ This project offers a unique digital experience for employers and chairpersons t
 - Responsive interface with animated sections
 - Flipbook view powered by PageFlip for book-like navigation
 - Scroll animations via WOW.js and Animate.css
+- Enhanced reading experience using ScrollMagic and Lottie animations
+- Print friendly pages generated with Paged.js
 - Works offline as a PWA
 
 Open `schedule8-masterpiece.html` in a modern web browser to begin.
