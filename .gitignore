@@ -1,1 +1,53 @@
+# Node modules (if using Node.js tools or frameworks)
 node_modules/
+
+# MacOS system files
+.DS_Store
+
+# Thumbnails
+._*
+
+# Shell history and logs
+*.log
+*.sh~
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# HTML build artifacts (if any build process)
+dist/
+build/
+out/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*~
+
+# Environment files
+.env
+.env.*
+
+# Coverage and reports
+coverage/
+*.lcov
+
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Git itself
+.git/
+
+# Custom for LRASection8 (add/remove as needed)
+# (No default HTML build files, so add if you use a tool that outputs HTML)
