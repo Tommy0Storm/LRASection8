@@ -16,6 +16,11 @@
     <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel='stylesheet' href='aos.css'>
+    <!-- Animation & Book Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/css/page-flip.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
     
     <style>
         :root {
@@ -573,6 +578,30 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             padding: 2rem;
+        /* Flipbook Styles */
+        .my-flipbook {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            margin: var(--space-xl) auto;
+        }
+        .page {
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: var(--space-lg);
+        }
+        .page h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin-bottom: var(--space-md);
+            color: var(--primary-navy);
+        }
+        .page p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
         }
     </style>
 </head>
@@ -746,6 +775,28 @@
             <div class="page"><h3>Section 8.1</h3><p>General Guidelines for Fair Dismissal...</p></div>
             <div class="page"><h3>Section 8.2</h3><p>Progressive Disciplinary Action...</p></div>
             <div class="page"><h3>Section 8.3</h3><p>Examples of Misconduct...</p></div>
+    <!-- Flipbook Section -->
+    <section class="section wow fadeInUp" id="book">
+        <h2 class="section-title">Schedule 8 Flipbook</h2>
+        <div id="flipbook" class="my-flipbook"></div>
+
+        <div id="bookPages" style="display:none;">
+            <div class="page">
+                <h3>8.1 General Guidelines</h3>
+                <p>A dismissal must be both substantively and procedurally fair.</p>
+            </div>
+            <div class="page">
+                <h3>8.2 Disciplinary Action</h3>
+                <p>Disciplinary measures should typically be progressive unless misconduct is serious.</p>
+            </div>
+            <div class="page">
+                <h3>8.3 Misconduct Examples</h3>
+                <p>Examples include dishonesty, insubordination, discrimination and more.</p>
+            </div>
+            <div class="page">
+                <h3>8.4 Incapacity Dismissals</h3>
+                <p>Dismissals arising from poor performance or ill-health.</p>
+            </div>
         </div>
     </section>
 
@@ -1091,6 +1142,21 @@ if (searchInput) {
         }).join('') || '<p style="color:#5D6D7E;">No results found</p>';
     });
 }
+        // Initialize WOW animations and Flipbook
+        if (typeof WOW === "function") {
+            new WOW().init();
+        }
+
+        if (window.St && document.getElementById("flipbook")) {
+            const pageFlip = new St.PageFlip(document.getElementById("flipbook"), {
+                width: 600,
+                height: 400,
+                size: "stretch",
+                maxShadowOpacity: 0.5,
+                showCover: false
+            });
+            pageFlip.loadFromHTML(document.querySelectorAll("#bookPages .page"));
+        }
     </script>
     <script src="jquery.min.js"></script>
     <script src="turn.min.js"></script>
