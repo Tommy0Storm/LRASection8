@@ -84,6 +84,14 @@ install_global_packages(){
     lerna
     vercel
     netlify-cli
+    create-react-app
+    @angular/cli
+    @vue/cli
+    yo
+    generator-code
+    firebase-tools
+    @aws-amplify/cli
+    @vercel/ncc
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
@@ -190,6 +198,14 @@ install_local_packages(){
     @testing-library/user-event
     supertest
     eslint-plugin-compat
+    eslint-plugin-jest
+    eslint-plugin-testing-library
+    eslint-plugin-cypress
+    eslint-plugin-react-hooks
+    webpack
+    webpack-cli
+    ts-loader
+    babel-jest
     stylelint-config-standard
     eslint-plugin-jsdoc
   )
