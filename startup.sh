@@ -71,6 +71,8 @@ install_global_packages(){
     @storybook/cli
     vite
     rollup
+    pnpm
+    gulp-cli
     parcel-bundler
     serve
     eslint_d
@@ -153,6 +155,8 @@ install_local_packages(){
     stylelint
     markdownlint-cli
     prettier-plugin-jsdoc
+    eslint-plugin-prettier
+    jest-junit
     npm-check-updates
     dotenv-cli
     eslint-config-airbnb-base
