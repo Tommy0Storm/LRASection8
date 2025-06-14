@@ -1,0 +1,10 @@
+jquery.min.js
+lunr.min.js
+turn.min.js
+aos.js
+aos.css
+.eslintrc.json
+.github/workflows/ci.yml
+README.md
+tsconfig.json
+eslint.config.js

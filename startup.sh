@@ -61,6 +61,7 @@ install_global_packages(){
     nodemon
     concurrently
     cross-env
+    pm2
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
@@ -125,6 +126,9 @@ install_local_packages(){
     eslint-plugin-security
     @commitlint/cli
     @commitlint/config-conventional
+    htmlhint
+    stylelint
+    markdownlint-cli
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
