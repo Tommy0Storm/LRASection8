@@ -61,4 +61,4 @@ This project offers a unique digital experience for employers and chairpersons t
 - Print friendly pages generated with Paged.js
 - Works offline as a PWA
 
-Open `schedule8-masterpiece.html` in a modern web browser to begin.
+Open `schedule8-masterpiece.html` in a modern web browser to begin. For an all-in-one page with no external dependencies, open `schedule8-offline.html`.

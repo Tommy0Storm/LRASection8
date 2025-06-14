@@ -68,6 +68,12 @@ install_global_packages(){
     pm2
     http-server
     live-server
+    @storybook/cli
+    vite
+    rollup
+    parcel-bundler
+    serve
+    eslint_d
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
@@ -153,6 +159,12 @@ install_local_packages(){
     eslint-plugin-promise
     http-server
     live-server
+    @storybook/cli
+    vite
+    rollup
+    parcel-bundler
+    serve
+    eslint_d
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
