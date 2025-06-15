@@ -191,6 +191,12 @@ install_global_packages(){
     serverless
     aws-cdk
   )
+  # Additional global utilities
+  packages+=(
+    fkill-cli
+    npm-check
+    trash-cli
+  )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
       log "$pkg already installed"
@@ -364,6 +370,12 @@ install_local_packages(){
     depcheck
     eslint-plugin-you-dont-need-lodash-underscore
     jest-html-reporters
+    eslint-plugin-html
+    eslint-plugin-yaml
+    @typescript-eslint/parser
+    @typescript-eslint/eslint-plugin
+    cspell
+    @types/express
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
