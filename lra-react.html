@@ -1,70 +1,113 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Labour Relations Act 66 of 1995 - React Edition</title>
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 20px; }
-    #searchInput { width: 100%; padding: 8px; font-size: 16px; }
-    #results { margin-top: 1em; }
-    #toggle { margin-top: 1em; }
-    pre { white-space: pre-wrap; background: #f9f9f9; padding: 10px; }
-  </style>
-</head>
-<body>
-  <div id="root">Loading...</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labour Relations Act 66 of 1995 - React Edition</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        margin: 20px;
+      }
+      #searchInput {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+      }
+      #results {
+        margin-top: 1em;
+      }
+      #toggle {
+        margin-top: 1em;
+      }
+      pre {
+        white-space: pre-wrap;
+        background: #f9f9f9;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">Loading...</div>
 
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="lunr.min.js"></script>
-  <script>
-    async function loadActText() {
-      const resp = await fetch('lra-full.html');
-      const html = await resp.text();
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      return doc.querySelector('#lraText').textContent;
-    }
-
-    loadActText().then(text => {
-      const lines = text.split(/\n+/).filter(Boolean);
-      const documents = lines.map((line, i) => ({ id: i, body: line }));
-      const idx = lunr(function() {
-        this.ref('id');
-        this.field('body');
-        documents.forEach(d => this.add(d));
-      });
-
-      function LraApp() {
-        const [query, setQuery] = React.useState('');
-        const [showAll, setShowAll] = React.useState(false);
-        const results = React.useMemo(() => {
-          if (!query) return [];
-          try { return idx.search(query); } catch (e) { return []; }
-        }, [query]);
-        return React.createElement('div', null,
-          React.createElement('h1', null, 'Labour Relations Act 66 of 1995'),
-          React.createElement('input', {
-            id: 'searchInput',
-            type: 'text',
-            placeholder: 'Search the Act...',
-            value: query,
-            onChange: e => setQuery(e.target.value)
-          }),
-          React.createElement('button', {
-            id: 'toggle',
-            onClick: () => setShowAll(!showAll)
-          }, showAll ? 'Hide Full Text' : 'Show Full Text'),
-          query && React.createElement('div', { id: 'results' },
-            results.map(r => React.createElement('div', { key: r.ref }, documents[r.ref].body))
-          ),
-          showAll && React.createElement('pre', null, text)
-        );
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="lunr.min.js"></script>
+    <script>
+      async function loadActText() {
+        const resp = await fetch('lra-full.html');
+        const html = await resp.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        return doc.querySelector('#lraText').textContent;
       }
 
-      ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(LraApp));
-    });
-  </script>
-</body>
+      loadActText().then((text) => {
+        const lines = text.split(/\n+/).filter(Boolean);
+        const documents = lines.map((line, i) => ({ id: i, body: line }));
+        const idx = lunr(function () {
+          this.ref('id');
+          this.field('body');
+          documents.forEach((d) => this.add(d));
+        });
+
+        function LraApp() {
+          const [query, setQuery] = React.useState('');
+          const [showAll, setShowAll] = React.useState(false);
+          const results = React.useMemo(() => {
+            if (!query) return [];
+            try {
+              return idx.search(query);
+            } catch (e) {
+              return [];
+            }
+          }, [query]);
+          return React.createElement(
+            'div',
+            null,
+            React.createElement('h1', null, 'Labour Relations Act 66 of 1995'),
+            React.createElement('input', {
+              id: 'searchInput',
+              type: 'text',
+              placeholder: 'Search the Act...',
+              value: query,
+              onChange: (e) => setQuery(e.target.value),
+            }),
+            React.createElement(
+              'button',
+              {
+                id: 'toggle',
+                onClick: () => setShowAll(!showAll),
+              },
+              showAll ? 'Hide Full Text' : 'Show Full Text'
+            ),
+            query &&
+              React.createElement(
+                'div',
+                { id: 'results' },
+                results.map((r) =>
+                  React.createElement(
+                    'div',
+                    { key: r.ref },
+                    documents[r.ref].body
+                  )
+                )
+              ),
+            showAll && React.createElement('pre', null, text)
+          );
+        }
+
+        ReactDOM.createRoot(document.getElementById('root')).render(
+          React.createElement(LraApp)
+        );
+      });
+    </script>
+  </body>
 </html>
