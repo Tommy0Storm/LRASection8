@@ -73,6 +73,7 @@ This project offers a unique digital experience for employers and chairpersons t
 
 Open `schedule8-masterpiece.html` in a modern web browser to begin. For an all-in-one page with no external dependencies, open `schedule8-offline.html`.
 And for quick reference to the complete Labour Relations Act, open `lra-full.html`.
+For a lightweight React-based interface that fetches the Act text dynamically, open `lra-react.html` (best served via `http-server`).
 
 ## Packaging the Gift
 
