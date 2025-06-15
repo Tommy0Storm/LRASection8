@@ -190,6 +190,13 @@ install_global_packages(){
     eslint-language-server
     serverless
     aws-cdk
+    corepack
+    npm-check-updates
+    webpack-dev-server
+    prettier-plugin-xml
+    eslint-plugin-lodash
+    eslint-plugin-no-unsanitized
+    tsx
   )
   # Additional global utilities
   packages+=(
@@ -260,6 +267,24 @@ install_local_packages(){
     jsonwebtoken
     body-parser
     morgan
+    fastify
+    @nestjs/core
+    prisma
+    @prisma/client
+    nodemailer
+    mongoose
+    socket.io
+    redis
+    pg
+    graphql
+    apollo-server-express
+    express-session
+    sequelize
+    typeorm
+    knex
+    swagger-ui-express
+    swagger-jsdoc
+    winston
   )
   # Additional common libraries for new projects
   deps+=(
@@ -376,6 +401,16 @@ install_local_packages(){
     @typescript-eslint/eslint-plugin
     cspell
     @types/express
+    eslint-plugin-lodash
+    eslint-plugin-no-unsanitized
+    prettier-plugin-xml
+    webpack-dev-server
+    tsx
+    jest-extended
+    jest-watch-typeahead
+    eslint-plugin-deprecation
+    prettier-plugin-sql
+    eslint-plugin-react-refresh
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"
