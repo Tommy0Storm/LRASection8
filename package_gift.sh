@@ -28,17 +28,46 @@ ensure_zip(){
   fi
 }
 
+usage(){
+  echo "Usage: $0 [-o output] [-m] [--format zip|tar]" >&2
+  exit 1
+}
+
 main(){
+  local output="gift-package.zip"
+  local include_masterpiece=false
+  local format="zip"
+
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      -o|--output)
+        output="$2"; shift 2;;
+      -m|--include-masterpiece)
+        include_masterpiece=true; shift;;
+      --format)
+        format="$2"; shift 2;;
+      -h|--help)
+        usage;;
+      *)
+        err "Unknown option: $1"; usage;;
+    esac
+  done
+
   log "Packaging offline gift"
   ensure_zip
   TMP_DIR=$(mktemp -d)
   cp schedule8-offline.html "$TMP_DIR/"
+  $include_masterpiece && cp schedule8-masterpiece.html "$TMP_DIR/"
   cp lra-full.html "$TMP_DIR/"
   cp jquery.min.js lunr.min.js turn.min.js "$TMP_DIR/"
   cp README.md "$TMP_DIR/" 2>/dev/null || true
-  zip -r gift-package.zip -j "$TMP_DIR"/*
+  if [ "$format" = "tar" ]; then
+    tar -czf "$output" -C "$TMP_DIR" .
+  else
+    zip -r "$output" -j "$TMP_DIR"/* >/dev/null
+  fi
   rm -r "$TMP_DIR"
-  log "Created gift-package.zip"
+  log "Created $output"
 }
 
 main "$@"
