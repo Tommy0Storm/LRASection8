@@ -72,6 +72,7 @@ This project offers a unique digital experience for employers and chairpersons t
 - Works offline as a PWA
 
 Open `schedule8-masterpiece.html` in a modern web browser to begin. For an all-in-one page with no external dependencies, open `schedule8-offline.html`.
+If you prefer everything bundled into a single standalone file (with scripts and styles inline), open `schedule8-single.html`.
 And for quick reference to the complete Labour Relations Act, open `lra-full.html`.
 For a lightweight React-based interface that fetches the Act text dynamically, open `lra-react.html` (best served via `http-server`).
 
