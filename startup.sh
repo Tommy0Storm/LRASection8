@@ -188,6 +188,8 @@ install_global_packages(){
     grunt-cli
     typescript-language-server
     eslint-language-server
+    serverless
+    aws-cdk
   )
   for pkg in "${packages[@]}"; do
     if npm list -g "$pkg" >/dev/null 2>&1; then
@@ -359,6 +361,9 @@ install_local_packages(){
     eslint-plugin-n
     prettier-plugin-organize-imports
     stylelint-scss
+    depcheck
+    eslint-plugin-you-dont-need-lodash-underscore
+    jest-html-reporters
   )
   log "Installing project dependencies"
   npm install --save "${deps[@]}"

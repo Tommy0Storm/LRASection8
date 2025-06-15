@@ -77,5 +77,7 @@ And for quick reference to the complete Labour Relations Act, open `lra-full.htm
 ## Packaging the Gift
 
 Run `./package_gift.sh` to produce `gift-package.zip` containing the offline
-HTML pages and supporting assets. Share this archive to provide a
-self-contained reference that works without an internet connection.
+HTML pages and supporting assets. Use `-m` to also include
+`schedule8-masterpiece.html`, `-o <file>` to set the output name and
+`--format tar` to create a tarball instead of a zip archive. Share this archive
+to provide a self-contained reference that works without an internet connection.
