@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translation Service</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+      }
+      textarea {
+        width: 100%;
+        height: 150px;
+      }
+      select,
+      button {
+        margin-top: 0.5rem;
+      }
+      #output {
+        margin-top: 1rem;
+        white-space: pre-wrap;
+      }
+      #history {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Translation Service</h1>
+    <label for="source">Source Language:</label>
+    <select id="source">
+      <option value="en">English</option>
+      <option value="af">Afrikaans</option>
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+      <option value="de">German</option>
+    </select>
+    <label for="target">Target Language:</label>
+    <select id="target">
+      <option value="af">Afrikaans</option>
+      <option value="en">English</option>
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+      <option value="de">German</option>
+    </select>
+    <textarea id="text" placeholder="Enter text to translate..."></textarea>
+    <button id="translateBtn">Translate</button>
+    <button id="clearHistory">Clear History</button>
+    <div id="output"></div>
+    <div id="history"></div>
+    <script>
+      const apiKey = 'AIzaSyDAo8ZTuuok9jx16XRojy_-Lo9V4Y-o2fY';
+      const historyKey = 'translationHistory';
+
+      function loadHistory() {
+        const data = localStorage.getItem(historyKey);
+        return data ? JSON.parse(data) : [];
+      }
+
+      function saveHistory(history) {
+        localStorage.setItem(historyKey, JSON.stringify(history));
+      }
+
+      function renderHistory() {
+        const history = loadHistory();
+        const container = document.getElementById('history');
+        container.innerHTML =
+          '<h2>History</h2>' +
+          history
+            .map(
+              (h) =>
+                `<p><strong>${h.from} ➜ ${h.to}:</strong> ${h.text} → ${h.translation}</p>`
+            )
+            .join('');
+      }
+
+      async function translate() {
+        const text = document.getElementById('text').value.trim();
+        const from = document.getElementById('source').value;
+        const to = document.getElementById('target').value;
+        const output = document.getElementById('output');
+        if (!text) {
+          output.textContent = 'Please enter text.';
+          return;
+        }
+        output.textContent = 'Translating...';
+        try {
+          const res = await fetch(
+            `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`,
+            {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                contents: [
+                  {
+                    parts: [
+                      {
+                        text: `Translate the following text from ${from} to ${to}: ${text}`,
+                      },
+                    ],
+                  },
+                ],
+              }),
+            }
+          );
+          if (!res.ok) throw new Error(`API error: ${res.status}`);
+          const data = await res.json();
+          const translation =
+            data.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
+          if (!translation) throw new Error('No translation returned');
+          output.textContent = translation;
+          const history = loadHistory();
+          history.unshift({ from, to, text, translation });
+          saveHistory(history.slice(0, 20));
+          renderHistory();
+        } catch (err) {
+          console.error(err);
+          output.textContent = 'Translation failed. ' + err.message;
+        }
+      }
+
+      document
+        .getElementById('translateBtn')
+        .addEventListener('click', translate);
+      document.getElementById('clearHistory').addEventListener('click', () => {
+        localStorage.removeItem(historyKey);
+        renderHistory();
+      });
+
+      renderHistory();
+    </script>
+  </body>
+</html>
